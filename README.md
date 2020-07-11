@@ -1,8 +1,8 @@
 # Serverless-Experiment
 ### Nvidia-Docker
 - install nvidia-docker
-- [reference link](https://github.com/NVIDIA/nvidia-docker)
-- [deprecated version](https://nvidia.github.io/nvidia-docker/)
+    - [reference link](https://github.com/NVIDIA/nvidia-docker)
+    - [deprecated version](https://nvidia.github.io/nvidia-docker/)
 ```bash
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -

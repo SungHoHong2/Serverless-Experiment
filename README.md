@@ -2,6 +2,7 @@
 ### Nvidia-Docker
 - get the correct version of nvidia-docker
 - [reference link](https://github.com/NVIDIA/nvidia-docker)
+- [reference to deprecated version](https://nvidia.github.io/nvidia-docker/)
 ```bash
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -

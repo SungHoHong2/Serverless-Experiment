@@ -1,6 +1,6 @@
 # Serverless-Experiment
 ### Nvidia-Docker
-- get the correct version of nvidia-docker
+- install nvidia-docker
 - [reference link](https://github.com/NVIDIA/nvidia-docker)
 - [deprecated version](https://nvidia.github.io/nvidia-docker/)
 ```bash

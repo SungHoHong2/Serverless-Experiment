@@ -1,4 +1,36 @@
 # Serverless-Experiment
+### Environment
+- deployed in `FIU cluster`  
+```bash 
+$ lsb_release -a         
+Distributor ID: Ubuntu                     
+Description:    Ubuntu 16.04.1 LTS         
+Release:        16.04                      
+Codename:       xenial
+
+$ docker --version 
+Docker version 18.09.7, build 2d0083d
+
+$ nvidia-docker run nvidia/cuda:10.0-base nvidia-smi    
+Tue Jul 14 18:20:14 2020                                                       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 410.48                 Driver Version: 410.48                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K40m          Off  | 00000000:83:00.0 Off |                    0 |
+| N/A   45C    P0    68W / 235W |      0MiB / 11441MiB |    100%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+```
+
 ### Nvidia-Docker
 - install nvidia-docker
     - [reference link](https://github.com/NVIDIA/nvidia-docker)
@@ -15,6 +47,7 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 sudo apt-get update
 sudo apt-get install nvidia-docker2
 sudo systemctl restart docker
+
 ```
 
 - run nvidia docker

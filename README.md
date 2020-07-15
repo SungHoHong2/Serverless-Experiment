@@ -147,8 +147,8 @@ it's Sungho here
 
 - kill the environment
 ```
-helm delete --purge openfaas
 kubectl delete namespace openfaas openfaas-fn
+helm delete --purge openfaas
 sudo k3d delete
 ```
 

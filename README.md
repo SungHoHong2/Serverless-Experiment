@@ -132,7 +132,6 @@ echo "OpenFaaS admin password: $PASSWORD"
 export OPENFAAS_URL=http://127.0.0.1:31112
 kubectl get pods -n openfaas
 kubectl port-forward -n openfaas svc/gateway 31112:8080 &
-echo -n $PASSWORD | faas-cli login --username admin --password-stdin
 faas-cli login --username=admin --password=$PASSWORD
 faas-cli version
 ```
